@@ -1700,7 +1700,7 @@ at::Tensor scaled_upper_triang_masked_softmax_forward(at::Tensor input,
 
     const int attn_batches = input.size(0);
     const int seq_len = input.size(1);
-    TORCH_CHECK(seq_len <= 2048);
+    TORCH_CHECK(seq_len <= 4096);
 
     // Output
     auto act_options = input.options().requires_grad(false);

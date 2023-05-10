@@ -20,3 +20,5 @@ tests/cpp/build/
 docs/_build
 .ipynb_checkpoints
 docs/doxygen
+.DS_Store
+.idea
